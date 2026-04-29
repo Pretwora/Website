@@ -1,0 +1,18 @@
+# Environment & Secrets
+.env
+.env.local
+.claude/.env.local
+.claude/github-token
+.claude/github-token.local
+
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# IDE
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
