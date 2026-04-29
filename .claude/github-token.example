@@ -1,0 +1,15 @@
+# GitHub Personal Access Token
+# Положи сюда свой GitHub токен для автоматических PR и коммитов
+#
+# Как получить токен:
+# 1. Перейди на https://github.com/settings/tokens
+# 2. Нажми "Generate new token" → "Generate new token (classic)"
+# 3. Дай токену имя (например "Claude Code")
+# 4. Выбери права (нужны: repo, read:user, user:email)
+# 5. Сгенерируй токен и скопируй его
+#
+# Сохрани токен в файле .claude/github-token (БЕЗ .example)
+#
+# Файл .claude/github-token уже добавлен в .gitignore, поэтому токен НЕ будет закоммичен
+
+GITHUB_TOKEN=ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
