@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ArrowShot — Стрельба из лука в Санкт-Петербурге</title>
+  <meta name="description" content="Клуб стрельбы из лука ArrowShot в Санкт-Петербурге. Индивидуальные и групповые занятия с профессиональным инструктором Евгением Лаврененковым.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ═══ HEADER ═══ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">
+        <svg class="logo__icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 22 Q10 5 22 5 Q22 22 22 22 Q22 39 10 39" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+          <line x1="22" y1="5" x2="22" y2="39" stroke="currentColor" stroke-width="1" stroke-dasharray="3,3" opacity="0.5"/>
+          <line x1="22" y1="22" x2="40" y2="22" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          <polygon points="39,19.5 44,22 39,24.5" fill="currentColor"/>
+        </svg>
+        <span class="logo__text">ArrowShot</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#about" class="nav__link">О нас</a></li>
+          <li><a href="#services" class="nav__link">Занятия</a></li>
+          <li><a href="#instructor" class="nav__link">Инструктор</a></li>
+          <li><a href="#clients" class="nav__link">Клиенты</a></li>
+          <li><a href="#gallery" class="nav__link">Галерея</a></li>
+          <li><a href="#contact" class="nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <a href="#contact" class="btn btn--outline header__cta">Записаться</a>
+      <button class="burger" id="burger" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ═══ HERO ═══ -->
+    <section class="hero" id="hero">
+      <canvas class="hero__canvas" id="heroCanvas"></canvas>
+      <div class="container hero__content">
+        <div class="hero__eyebrow">
+          <div class="hero__dot"></div>
+          <span>Санкт-Петербург</span>
+        </div>
+        <h1 class="hero__title">
+          Почувствуй силу<br>
+          <em>точного выстрела</em>
+        </h1>
+        <p class="hero__subtitle">
+          ArrowShot — клуб стрельбы из лука, где каждый<br class="br-desktop">
+          находит свой путь к точности и внутренней гармонии
+        </p>
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--primary">Начать стрелять</a>
+          <a href="#about" class="btn btn--ghost">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><circle cx="12" cy="12" r="10"/><polyline points="12 8 12 12 14 14"/></svg>
+            Узнать больше
+          </a>
+        </div>
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <span class="hero__stat-num" data-count="200">0</span><span class="hero__stat-plus">+</span>
+            <span class="hero__stat-label">учеников</span>
+          </div>
+          <div class="hero__stat-divider"></div>
+          <div class="hero__stat">
+            <span class="hero__stat-num" data-count="7">0</span><span class="hero__stat-plus">+</span>
+            <span class="hero__stat-label">лет опыта</span>
+          </div>
+          <div class="hero__stat-divider"></div>
+          <div class="hero__stat">
+            <span class="hero__stat-num" data-count="50">0</span><span class="hero__stat-plus">+</span>
+            <span class="hero__stat-label">корп. клиентов</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__scroll">
+        <div class="hero__scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- ═══ WHY ARCHERY ═══ -->
+    <section class="why" id="why">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Почему лук?</span>
+          <h2 class="section-title">Стрельба из лука —<br>это нечто большее</h2>
+        </div>
+        <div class="why__grid">
+          <div class="why__card reveal">
+            <div class="why__icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="24" cy="24" r="13" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="24" cy="24" r="6" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="24" cy="24" r="2" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3>Фокус и концентрация</h3>
+            <p>Каждый выстрел — это медитация. Вы учитесь управлять вниманием, отключать шум и быть полностью здесь и сейчас</p>
+          </div>
+          <div class="why__card reveal">
+            <div class="why__icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 8 C24 8 36 16 36 28 C36 34.627 30.627 40 24 40 C17.373 40 12 34.627 12 28 C12 16 24 8 24 8Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                <path d="M18 28 C18 24.686 20.686 22 24 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Физическая сила</h3>
+            <p>Регулярные занятия развивают мышцы спины, плеч и рук, улучшают осанку и координацию движений</p>
+          </div>
+          <div class="why__card reveal">
+            <div class="why__icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 36 Q20 8 42 10" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                <polygon points="40,6 46,12 40,14" fill="currentColor"/>
+                <circle cx="8" cy="36" r="2.5" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3>Адреналин и прогресс</h3>
+            <p>Первое попадание в яблочко — ощущение, которое невозможно описать. Каждое занятие приносит новые достижения</p>
+          </div>
+          <div class="why__card reveal">
+            <div class="why__icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 6L27.7 17.3H40L29.6 24.1L33.4 35.4L24 28.6L14.6 35.4L18.4 24.1L8 17.3H20.3Z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Дисциплина и характер</h3>
+            <p>Лук учит терпению. Навыки, приобретённые на тренировках, переходят в повседневную жизнь и карьеру</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ ABOUT ═══ -->
+    <section class="about" id="about">
+      <div class="container about__inner">
+        <div class="about__visual reveal">
+          <div class="about__target-wrap">
+            <div class="about__target">
+              <div class="about__ring r1"></div>
+              <div class="about__ring r2"></div>
+              <div class="about__ring r3"></div>
+              <div class="about__ring r4"></div>
+              <div class="about__bullseye"></div>
+            </div>
+          </div>
+          <div class="about__badge">
+            <span class="about__badge-year">2017</span>
+            <span class="about__badge-text">год основания</span>
+          </div>
+          <div class="about__deco-line"></div>
+        </div>
+        <div class="about__content reveal">
+          <span class="section-tag">О нас</span>
+          <h2 class="section-title">ArrowShot —<br>место, где рождается<br><em>точность</em></h2>
+          <p class="about__text">
+            Мы создали ArrowShot с одной целью — сделать стрельбу из лука доступной и увлекательной для каждого. Здесь нет порога вхождения: занятия открыты для детей от 8 лет, взрослых и корпоративных команд.
+          </p>
+          <p class="about__text">
+            За годы работы мы выработали методику, которая позволяет добиться первых результатов уже с первого занятия. Наша философия: точность — это не талант, а навык.
+          </p>
+          <div class="about__metrics">
+            <div class="about__metric">
+              <span class="counter" data-count="200">0</span><span class="metric-plus">+</span>
+              <span class="metric-label">учеников</span>
+            </div>
+            <div class="about__metric">
+              <span class="counter" data-count="7">0</span><span class="metric-plus">+</span>
+              <span class="metric-label">лет опыта</span>
+            </div>
+            <div class="about__metric">
+              <span class="counter" data-count="50">0</span><span class="metric-plus">+</span>
+              <span class="metric-label">корп. клиентов</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ INSTRUCTOR ═══ -->
+    <section class="instructor" id="instructor">
+      <div class="instructor__bg-text" aria-hidden="true">МАСТЕР</div>
+      <div class="container instructor__inner">
+        <div class="instructor__photo-col reveal">
+          <div class="instructor__photo-wrap">
+            <div class="instructor__photo">
+              <img src="assets/images/evgeny1.PNG" alt="Евгений Лаврененков — инструктор ArrowShot">
+            </div>
+            <div class="instructor__ring-deco"></div>
+            <div class="instructor__dot i-dot-1"></div>
+            <div class="instructor__dot i-dot-2"></div>
+            <div class="instructor__dot i-dot-3"></div>
+            <div class="instructor__medal">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <span>МС</span>
+            </div>
+          </div>
+        </div>
+        <div class="instructor__content reveal">
+          <span class="section-tag">Инструктор</span>
+          <h2 class="section-title">Евгений<br>Лаврененков</h2>
+          <p class="instructor__role">Мастер спорта · Тренер · Чемпион</p>
+          <p class="instructor__bio">
+            Более 7 лет в профессиональной стрельбе из лука. Участник чемпионата России 2019 и 2021 годов, многократный победитель соревнований Северо-Западного федерального округа.
+          </p>
+          <p class="instructor__bio">
+            Разработал авторскую методику обучения, которая позволяет новичку сделать первый точный выстрел уже на первом занятии. Обучил более 200 учеников — от детей до профессиональных спортсменов.
+          </p>
+          <div class="instructor__achievements">
+            <div class="instructor__achievement">
+              <div class="achievement-icon">
+                <svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14"><path d="M10 1l2.39 5.26 5.61.82-4.06 3.95.96 5.6L10 14l-4.9 2.63.96-5.6L2 7.08l5.61-.82L10 1z"/></svg>
+              </div>
+              <span>Чемпионат России — 2019, 2021</span>
+            </div>
+            <div class="instructor__achievement">
+              <div class="achievement-icon">
+                <svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14"><path d="M10 1l2.39 5.26 5.61.82-4.06 3.95.96 5.6L10 14l-4.9 2.63.96-5.6L2 7.08l5.61-.82L10 1z"/></svg>
+              </div>
+              <span>Победитель СЗФО — 5 раз</span>
+            </div>
+            <div class="instructor__achievement">
+              <div class="achievement-icon">
+                <svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14"><path d="M10 1l2.39 5.26 5.61.82-4.06 3.95.96 5.6L10 14l-4.9 2.63.96-5.6L2 7.08l5.61-.82L10 1z"/></svg>
+              </div>
+              <span>Авторская методика обучения с нуля</span>
+            </div>
+            <div class="instructor__achievement">
+              <div class="achievement-icon">
+                <svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14"><path d="M10 1l2.39 5.26 5.61.82-4.06 3.95.96 5.6L10 14l-4.9 2.63.96-5.6L2 7.08l5.61-.82L10 1z"/></svg>
+              </div>
+              <span>200+ учеников всех возрастов</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn--primary">Записаться к Евгению</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ SERVICES ═══ -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Что мы предлагаем</span>
+          <h2 class="section-title">Занятия для<br>любого уровня</h2>
+        </div>
+        <div class="services__grid">
+
+          <div class="service-card reveal">
+            <div class="service-card__num">01</div>
+            <div class="service-card__icon">
+              <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="14" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M6 44C6 35.163 13.163 28 22 28H26C34.837 28 42 35.163 42 44" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="service-card__title">Индивидуальные занятия</h3>
+            <p class="service-card__text">Персональная программа под ваши цели и физические данные. Максимальный результат в минимальные сроки</p>
+            <a href="#contact" class="service-card__link">Записаться <span>→</span></a>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-card__num">02</div>
+            <div class="service-card__icon">
+              <svg viewBox="0 0 48 48" fill="none"><circle cx="16" cy="14" r="7" stroke="currentColor" stroke-width="1.5"/><circle cx="32" cy="14" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M2 42C2 34.268 8.268 28 16 28C20.143 28 23.875 29.769 26.5 32.595" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M22 42C22 34.268 28.268 28 36 28C40.143 28 43.875 29.769 46.5 32.595" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="service-card__title">Групповые занятия</h3>
+            <p class="service-card__text">Мини-группы до 6 человек. Дружеская атмосфера, соревновательный дух и общий прогресс</p>
+            <a href="#contact" class="service-card__link">Записаться <span>→</span></a>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-card__num">03</div>
+            <div class="service-card__icon">
+              <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="12" width="32" height="26" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M16 12V9C16 7.343 17.343 6 19 6H29C30.657 6 32 7.343 32 9V12" stroke="currentColor" stroke-width="1.5"/><path d="M16 28L20 32L32 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="service-card__title">Корпоративные мероприятия</h3>
+            <p class="service-card__text">Team building на совершенно другом уровне. Незабываемый опыт для команды, который сплотит и зарядит энергией</p>
+            <a href="#contact" class="service-card__link">Подробнее <span>→</span></a>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-card__num">04</div>
+            <div class="service-card__icon">
+              <svg viewBox="0 0 48 48" fill="none"><path d="M10 24Q10 8 22 8Q22 24 22 24Q22 40 10 40" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/><line x1="22" y1="8" x2="22" y2="40" stroke="currentColor" stroke-width="1" stroke-dasharray="3,3" opacity="0.5"/><line x1="22" y1="24" x2="40" y2="24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><polygon points="39,21.5 44,24 39,26.5" fill="currentColor"/></svg>
+            </div>
+            <h3 class="service-card__title">Аренда оборудования</h3>
+            <p class="service-card__text">Профессиональные луки, стрелы и защитное снаряжение — всё включено в стоимость. Приходите налегке</p>
+            <a href="#contact" class="service-card__link">Подробнее <span>→</span></a>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-card__num">05</div>
+            <div class="service-card__icon">
+              <svg viewBox="0 0 48 48" fill="none"><path d="M24 6L27.7 17.3H40L29.6 24.1L33.4 35.4L24 28.6L14.6 35.4L18.4 24.1L8 17.3H20.3Z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="service-card__title">Участие в соревнованиях</h3>
+            <p class="service-card__text">Подготовим к городским, региональным и всероссийским соревнованиям. От новичка до чемпиона</p>
+            <a href="#contact" class="service-card__link">Узнать больше <span>→</span></a>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-card__num">06</div>
+            <div class="service-card__icon">
+              <svg viewBox="0 0 48 48" fill="none"><path d="M14 8H34L38 18H10L14 8Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><rect x="10" y="18" width="28" height="22" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M20 28H28M24 24V32" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="service-card__title">Продажа инвентаря</h3>
+            <p class="service-card__text">Подберём профессиональное оборудование под ваш уровень и бюджет. Работаем с ведущими брендами</p>
+            <a href="#contact" class="service-card__link">По запросу <span>→</span></a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ HOW IT WORKS ═══ -->
+    <section class="howto" id="howto">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Как проходит занятие</span>
+          <h2 class="section-title">От первого шага<br>до точного выстрела</h2>
+        </div>
+        <div class="howto__steps">
+          <div class="howto__line-track"><div class="howto__line-fill" id="howtoLine"></div></div>
+          <div class="howto__step reveal">
+            <div class="howto__step-marker">
+              <span class="howto__step-num">01</span>
+            </div>
+            <div class="howto__step-body">
+              <h3>Вы приходите</h3>
+              <p>Встречаем вас, проводим знакомство. Оборудование уже готово — вам нужно только прийти и настроиться</p>
+            </div>
+          </div>
+          <div class="howto__step reveal">
+            <div class="howto__step-marker">
+              <span class="howto__step-num">02</span>
+            </div>
+            <div class="howto__step-body">
+              <h3>Инструктаж</h3>
+              <p>Евгений объясняет стойку, хват, прицеливание. Никакой лишней теории — только то, что нужно для первого выстрела</p>
+            </div>
+          </div>
+          <div class="howto__step reveal">
+            <div class="howto__step-marker">
+              <span class="howto__step-num">03</span>
+            </div>
+            <div class="howto__step-body">
+              <h3>Первый выстрел</h3>
+              <p>Вы берёте лук в руки. Натягиваете тетиву. Прицеливаетесь. Отпускаете — и стрела летит точно в цель</p>
+            </div>
+          </div>
+          <div class="howto__step reveal">
+            <div class="howto__step-marker">
+              <span class="howto__step-num">04</span>
+            </div>
+            <div class="howto__step-body">
+              <h3>Ваш прогресс</h3>
+              <p>После каждого занятия вы видите, как растёте. Разбираем ошибки, ставим цели и планируем следующий шаг</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ GALLERY ═══ -->
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Галерея</span>
+          <h2 class="section-title">Атмосфера<br>ArrowShot</h2>
+        </div>
+        <div class="gallery__grid">
+          <div class="gallery__item gallery__item--tall reveal">
+            <img src="assets/images/gallery1.PNG" alt="Тренировка по стрельбе из лука" loading="lazy">
+            <div class="gallery__caption">Тренировка</div>
+          </div>
+          <div class="gallery__col-right">
+            <div class="gallery__item reveal">
+              <img src="assets/images/gallery2.PNG" alt="Стрельба из лука" loading="lazy">
+              <div class="gallery__caption">Точность</div>
+            </div>
+            <div class="gallery__item reveal">
+              <img src="assets/images/evgeny2.PNG" alt="Инструктор Евгений" loading="lazy">
+              <div class="gallery__caption">Инструктор</div>
+            </div>
+          </div>
+          <div class="gallery__item reveal">
+            <img src="assets/images/evgeny1.PNG" alt="Занятие с инструктором" loading="lazy">
+            <div class="gallery__caption">Занятие</div>
+          </div>
+          <div class="gallery__item gallery__item--wide reveal">
+            <img src="assets/images/gallery1.PNG" alt="Атмосфера клуба" loading="lazy">
+            <div class="gallery__caption">ArrowShot</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CLIENTS ═══ -->
+    <section class="clients" id="clients">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Клиенты</span>
+          <h2 class="section-title">Они уже стреляют<br>с нами</h2>
+        </div>
+        <div class="testimonials">
+          <div class="testimonial reveal">
+            <div class="testimonial__stars">★★★★★</div>
+            <blockquote class="testimonial__text">«Пришла скептически, ушла влюблённой в лук. После первого занятия записалась на месяц вперёд!»</blockquote>
+            <div class="testimonial__author">
+              <div class="testimonial__avatar">АМ</div>
+              <div class="testimonial__info">
+                <span class="testimonial__name">Анна М.</span>
+                <span class="testimonial__since">Ученица, 6 месяцев</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial reveal">
+            <div class="testimonial__stars">★★★★★</div>
+            <blockquote class="testimonial__text">«Евгений — профессионал до мозга костей. Объяснил технику так, что всё встало на место с первого раза»</blockquote>
+            <div class="testimonial__author">
+              <div class="testimonial__avatar">ДК</div>
+              <div class="testimonial__info">
+                <span class="testimonial__name">Дмитрий К.</span>
+                <span class="testimonial__since">Ученик, 1 год</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial reveal">
+            <div class="testimonial__stars">★★★★★</div>
+            <blockquote class="testimonial__text">«Водила дочь на корпоратив. Теперь занимаемся обе — ArrowShot стал частью нашей жизни»</blockquote>
+            <div class="testimonial__author">
+              <div class="testimonial__avatar">МЛ</div>
+              <div class="testimonial__info">
+                <span class="testimonial__name">Марина Л.</span>
+                <span class="testimonial__since">Ученица, 8 месяцев</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial reveal">
+            <div class="testimonial__stars">★★★★★</div>
+            <blockquote class="testimonial__text">«Думал, это скучно. Оказалось — медитация с адреналином. Рекомендую всем без исключения»</blockquote>
+            <div class="testimonial__author">
+              <div class="testimonial__avatar">АВ</div>
+              <div class="testimonial__info">
+                <span class="testimonial__name">Алексей В.</span>
+                <span class="testimonial__since">Ученик, 3 месяца</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="partners reveal">
+          <p class="partners__label">Корпоративные клиенты</p>
+          <div class="partners__row">
+            <div class="partner-logo">Компания А</div>
+            <div class="partner-logo">Компания Б</div>
+            <div class="partner-logo">Компания В</div>
+            <div class="partner-logo">Компания Г</div>
+            <div class="partner-logo">Компания Д</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CONTACT ═══ -->
+    <section class="contact" id="contact">
+      <div class="container contact__inner">
+        <div class="contact__left reveal">
+          <span class="section-tag section-tag--light">Контакты</span>
+          <h2 class="section-title section-title--light">Сделай<br>первый выстрел</h2>
+          <p class="contact__desc">Запишитесь на пробное занятие — это бесплатно. Просто приходите и попробуйте</p>
+          <div class="contact__list">
+            <a href="tel:+78120000000" class="contact__item">
+              <div class="contact__item-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.64A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              </div>
+              <span>+7 (812) 000-00-00</span>
+            </a>
+            <a href="mailto:info@arrowshot.ru" class="contact__item">
+              <div class="contact__item-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <span>info@arrowshot.ru</span>
+            </a>
+            <div class="contact__item">
+              <div class="contact__item-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <span>Санкт-Петербург, ул. Примерная, 1</span>
+            </div>
+          </div>
+          <div class="contact__social">
+            <a href="#" class="social-btn" aria-label="ВКонтакте">ВК</a>
+            <a href="#" class="social-btn" aria-label="Instagram">IG</a>
+            <a href="#" class="social-btn" aria-label="Telegram">TG</a>
+          </div>
+        </div>
+
+        <div class="contact__right reveal">
+          <form class="contact__form" id="contactForm" novalidate>
+            <h3 class="form__title">Оставить заявку</h3>
+            <div class="form-group">
+              <label for="name">Ваше имя</label>
+              <input type="text" id="name" name="name" placeholder="Например, Александра" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="phone">Телефон</label>
+              <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required autocomplete="tel">
+            </div>
+            <div class="form-group">
+              <label for="interest">Что интересует?</label>
+              <select id="interest" name="interest">
+                <option value="">Выберите тип занятия</option>
+                <option value="individual">Индивидуальное занятие</option>
+                <option value="group">Групповое занятие</option>
+                <option value="corporate">Корпоративное мероприятие</option>
+                <option value="competition">Подготовка к соревнованиям</option>
+                <option value="other">Другое</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Комментарий</label>
+              <textarea id="message" name="message" placeholder="Расскажите о себе или задайте вопрос" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">
+              Отправить заявку
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
+            <p class="form__note">Нажимая кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="container footer__top">
+      <div class="footer__brand">
+        <a href="#" class="logo logo--footer">
+          <svg class="logo__icon" viewBox="0 0 44 44" fill="none">
+            <path d="M10 22 Q10 5 22 5 Q22 22 22 22 Q22 39 10 39" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+            <line x1="22" y1="5" x2="22" y2="39" stroke="currentColor" stroke-width="1" stroke-dasharray="3,3" opacity="0.5"/>
+            <line x1="22" y1="22" x2="40" y2="22" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <polygon points="39,19.5 44,22 39,24.5" fill="currentColor"/>
+          </svg>
+          <span class="logo__text">ArrowShot</span>
+        </a>
+        <p class="footer__tagline">Точность — это навык,<br>который поддаётся тренировке</p>
+      </div>
+      <nav class="footer__nav">
+        <span class="footer__nav-title">Навигация</span>
+        <ul>
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#services">Занятия</a></li>
+          <li><a href="#instructor">Инструктор</a></li>
+          <li><a href="#gallery">Галерея</a></li>
+          <li><a href="#clients">Клиенты</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="footer__contacts">
+        <span class="footer__nav-title">Контакты</span>
+        <p>+7 (812) 000-00-00</p>
+        <p>info@arrowshot.ru</p>
+        <p>Санкт-Петербург,<br>ул. Примерная, 1</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>© 2025 ArrowShot. Все права защищены</p>
+        <a href="#">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div class="toast" id="toast" role="alert">
+    <div class="toast__icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18"><polyline points="20 6 9 17 4 12"/></svg>
+    </div>
+    <span>Заявка отправлена! Свяжемся в течение 30 минут</span>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="js/three-scene.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
